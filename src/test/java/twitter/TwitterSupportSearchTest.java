@@ -21,7 +21,7 @@ public WebDriver driver;
 	@Before
 	public void setUp() throws Exception  {
 		DesiredCapabilities capability = DesiredCapabilities.firefox();
-		driver = new RemoteWebDriver(new URL("http://gaveltest:4444/wd/hub"), capability);
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
 		// implicit time out searching for all elements will try for 20 seconds
 	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	    
